@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Mono+One&display=swap');
+
+:root {
+    /* --text-color: black;
+    --bg-color: white;
+    --shadow-color: lightray; */
+    --text-color: white;
+    --bg-color: rgba(0, 0, 0, 0.7);
+    --shadow-color: rgb(45, 45, 45);
+}
+
+body {
+    /* https://static.vecteezy.com/system/resources/previews/002/787/948/non_2x/cute-corgi-dog-sitting-cartoon-seamless-pattern-illustration-vector.jpg */
+    background-attachment: fixed;
+    background-size: 20%;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: "Philosopher", sans-serif; */
+
+    font-size: 22px;
+
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    font-family: "Rubik Mono One", monospace;
+}
+
+.dirk {
+    background: url(https://img.freepik.com/premium-vector/seamless-pattern-black-cat-different-poses-decorative-boho-style-elements-cosmic-sky-vector-repeat-mystical-illustration-grey_185796-166.jpg?w=360);
+}
+
+.douglas {
+    /* background: url(https://i.redd.it/ozy7dage7lfx.jpg); */
+    background: url(https://wallpapers.com/images/featured/space-sjryfre8k8f6i3ge.jpg);
+
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.guide {
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp10508295.jpg&f=1&nofb=1&ipt=ae5f8c6e5663610755b94e2cfb7686083dffa6ca3d4d2951f46da2f857bfbb09&ipo=images);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position-x: 120%;
+}
+
+.doctor {
+    background: url(https://wallpapercave.com/wp/VwacRf2.jpg);
+
+    background-attachment: fixed;
+    background-size: 100%;
+    /* background-size: cover; */
+    background-position-y: 100%;
+}
+
+.contact {
+    background: url(https://images.wallpapersden.com/image/download/anime-sunset-hd-ai-2023-art_bmVsZm2UmZqaraWkpJRmbmpnrWZmZ2U.jpg);
+
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.doctor section {
+    background-color: black;
+    color: white;
+    box-shadow: none;
+}
+
+main {
+    padding: 40px;
+
+    width: 1600px;
+    margin: auto;
+}
+
+.dirk main {
+    background-color: rgb(50, 50, 50);
+    box-shadow: rgba(255, 166, 0, 0.171) 0px 0px 400px 0px;
+}
+
+.dogulas main {
+    background-color: transparent;
+    box-shadow: transparent;
+}
+
+header {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+
+.menu {
+    padding: 20px;
+
+    border-radius: 20px;
+}
+
+#menu-red {
+    background-color: red;
+    box-shadow: red 0px 0px 200px 0px;
+}
+
+#menu-blue {
+    background-color: blue;
+    box-shadow: blue 0px 0px 200px 0px;
+}
+
+.menu ul {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-around;
+
+    font-size: 30px;
+    color: white;
+}
+
+.menu ul li {
+    list-style: none;
+    font-size: 40px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover {
+    color: black;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+img {
+    height: 600px;
+}
+
+section {
+    padding: 20px;
+    border-radius: 20px;
+
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow-color) 0px 0px 200px 0px;
+
+    margin-bottom: 40px;
+}
+
+#title-orange {
+    padding: 20px;
+    border-radius: 20px;
+
+    background-color: orange;
+    color: white;
+
+    box-shadow: orange 0px 0px 200px 0px;
+
+    margin-bottom: 40px;
+}
+
+#title-blue {
+    padding: 20px;
+    border-radius: 20px;
+
+    background-color: blue;
+    color: white;
+
+    box-shadow: blue 0px 0px 200px 0px;
+
+    margin-bottom: 40px;
+}
+
+#guide-img {
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wallpaperflare.com%2Fstatic%2F824%2F362%2F487%2Ftypography-simple-background-the-hitchhiker-s-guide-to-the-galaxy-black-wallpaper.jpg&f=1&nofb=1&ipt=064ffeafb57d414667518d62e326707312d85eeea451bda468c84f1c7590d39d&ipo=images);
+    
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#douglas-img {
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.epicquotes.com%2Fwp-content%2Fuploads%2F2022%2F03%2FDouglas-Adams-Quotes--1200x675.png&f=1&nofb=1&ipt=9ed2219a78af6d8d3d890675acfc30f96e2bff87684fc04cd37ea3bea332f19a&ipo=images);
+    
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#doctor-img {
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp3207943.jpg&f=1&nofb=1&ipt=5724a7ce77148fb965908651ac930b3b5bb8c942dc1e0d26f5117fe8e2d8f2d8&ipo=images);
+
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#dirk-img {
+    background: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/a8798a47892965.58881d69937ca.jpg);
+
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner-img {
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 1000px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+
+    padding: 80px;
+
+    font-size: 40px;
+
+    border-radius: 40px;
+}
+
+@media (max-width: 1700px) {
+    main {
+        width: 90%;
+        margin: 0px;
+    }
+    
+    #menu ul {
+        flex-direction: column;
+    }
+}
+
+.book-container {
+    display: flex;
+}
+
+.book {
+    width: 100%;
+    box-shadow: rgba(255, 166, 0, 0.456) 0px 0px 200px 0px;
+    background-color: orange;
+    /* padding: 20px; */
+    margin: 20px;
+    border-radius: 40px;
+}
+
+.book img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 40px;
+    margin-bottom: -5px;
+}
+
+.book h3{
+    text-align: center;
+    height: 30px;
+    padding: 20px;
+}
+
+.book h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.book h3 a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+html {
+    overflow-y: scroll;
+    scrollbar-color: white black;
+    scrollbar-width: 10px;
+    scrollbar-highlight-color: aqua;
+}
+
+img {
+    transform: scale(1);
+    box-shadow: transparent 0px 0px 0px 0px;
+    /* transition: transform 0.6s; */
+    transition: box-shadow 0.4s, transform 0.2s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: white 0px 0px 50px 0px;
+    /* transition: transform 0.6s; */
+    transition: box-shadow 0.4s, transform 0.2s;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    display: grid;
+
+    padding: 60px;
+    font-size: 30px;
+
+    /* grid-template-columns: 50% 50%; */
+    grid-gap: 40px;
+    /* grid-template-rows: ; */
+}
+
+form input, form select {
+    padding: 40px;
+    border-radius: 20px;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    box-shadow: var(--text-color) 0px 0px 20px 0px;
+}
+
+.pushable {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+}
+.edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: blue;
+}
+.front {
+    font-family: "Rubik Mono One", monospace;
+    display: block;
+    position: relative;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 40px;
+    color: white;
+    background: darkcyan;
+    will-change: transform;
+    transform: translateY(-4px);
+    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+    border: 1px black solid;
+    box-shadow: cyan 0px 0px 5px 2px;
+    border-color: white;
+}
+
+.pushable:hover {
+    filter: brightness(110%);
+}
+
+.pushable:hover .front {
+    transform: translateY(-6px);
+    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+.pushable:active .front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+}
+
+.pushable:focus:not(:focus-visible) {
+    outline: none;
+}
