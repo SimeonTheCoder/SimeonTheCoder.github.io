@@ -98,12 +98,12 @@ header {
 }
 
 #menu-red {
-    background-color: red;
-    box-shadow: red 0px 0px 200px 0px;
+    background-color: black;
+    box-shadow: black 0px 0px 200px 0px;
 }
 
 #menu-blue {
-    background-color: blue;
+    background-color: black;
     box-shadow: blue 0px 0px 200px 0px;
 }
 
@@ -128,7 +128,7 @@ header {
 }
 
 .menu ul li a:hover {
-    color: black;
+    color: blue;
 }
 
 h1 {
@@ -148,9 +148,12 @@ section {
     border-radius: 20px;
 
     background-color: var(--bg-color);
-    box-shadow: var(--shadow-color) 0px 0px 200px 0px;
+    box-shadow: var(--shadow-color) 0px 0px 200px 0px, var(--text-color) 0px 0px 20px 0px;
+
 
     margin-bottom: 40px;
+
+    border: white 1px solid;
 }
 
 #title-orange {
@@ -374,4 +377,43 @@ form input, form select {
 
 .pushable:focus:not(:focus-visible) {
     outline: none;
+}
+
+.douglas {
+    display: grid;
+    grid-template-columns: 20% 75%;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 5%;
+    grid-template-areas: 'banner banner'  '. .'  'footer footer';
+}
+
+.douglas #main-body {
+    width: 100%;
+}
+
+.douglas #main-body main{
+    width: 95%;
+    margin: 0px;
+}
+
+.douglas nav {
+    height: 80%;
+    width: 100%;
+}
+
+.douglas .menu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.douglas .menu ul li {
+    margin: 40px;
+}
+
+.banner-img {
+    grid-area: banner;
+}
+
+footer {
+    grid-area: footer;
 }
