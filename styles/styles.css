@@ -428,3 +428,27 @@ body {
 footer {
     grid-area: footer;
 }
+
+.contact {
+    /* https://static.vecteezy.com/system/resources/previews/002/787/948/non_2x/cute-corgi-dog-sitting-cartoon-seamless-pattern-illustration-vector.jpg */
+    background-attachment: fixed;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: "Philosopher", sans-serif; */
+
+    background: url(https://images.wallpapersden.com/image/download/anime-sunset-hd-ai-2023-art_bmVsZm2UmZqaraWkpJRmbmpnrWZmZ2U.jpg);
+
+    background-size: cover;
+    display: block;
+
+    font-size: 22px;
+
+    color: var(--text-color);
+}
+
+.contact main {
+    padding: 40px;
+
+    width: 1600px;
+    margin: auto;
+}
