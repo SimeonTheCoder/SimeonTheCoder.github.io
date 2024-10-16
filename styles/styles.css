@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Mono+One&display=swap');
 
+html {
+    width: 100vw;
+    overflow-x: clip;
+}
+
 :root {
     /* --text-color: black;
     --bg-color: white;
@@ -18,7 +23,11 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     /* font-family: "Philosopher", sans-serif; */
 
-    font-size: 22px;
+    font-size: 18px;
+    margin-left: -50px;
+    margin-top: -15px;
+    /* width: 105%; */
+    overflow-x: visible;
 
     color: var(--text-color);
 }
@@ -92,7 +101,7 @@ header {
 }
 
 .menu, .vert-menu{
-    padding: 20px;
+    padding: 10px;
 
     border-radius: 20px;
 }
@@ -113,13 +122,13 @@ header {
     flex-direction: row;
     justify-content: space-around;
 
-    font-size: 30px;
+    font-size: 20px;
     color: white;
 }
 
 .menu ul li, .vert-menu ul li {
     list-style: none;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .menu ul li a, .vert-menu ul li a {
@@ -132,15 +141,11 @@ header {
 }
 
 h1 {
-    font-size: 80px;
-}
-
-h2 {
     font-size: 40px;
 }
 
-img {
-    height: 600px;
+h2 {
+    font-size: 30px;
 }
 
 section {
@@ -160,7 +165,7 @@ section {
     padding: 20px;
     border-radius: 20px;
 
-    background-color: orange;
+    background-color: black;
     color: white;
 
     box-shadow: orange 0px 0px 200px 0px;
@@ -172,7 +177,7 @@ section {
     padding: 20px;
     border-radius: 20px;
 
-    background-color: blue;
+    background-color: black;
     color: white;
 
     box-shadow: blue 0px 0px 200px 0px;
@@ -181,14 +186,14 @@ section {
 }
 
 #guide-img {
-    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wallpaperflare.com%2Fstatic%2F824%2F362%2F487%2Ftypography-simple-background-the-hitchhiker-s-guide-to-the-galaxy-black-wallpaper.jpg&f=1&nofb=1&ipt=064ffeafb57d414667518d62e326707312d85eeea451bda468c84f1c7590d39d&ipo=images);
+    background: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.collider.com%2Fwp-content%2Fuploads%2F2019%2F07%2Fhitchhikers-guide.jpg&f=1&nofb=1&ipt=581162a160b467138d340d08e2efbef217e3b1a06675e0fd30fb89e735460288&ipo=images);
     
     background-size: cover;
     background-attachment: fixed;
 }
 
 #douglas-img {
-    background: url(https://www.shutterstock.com/editorial/image-editorial/M1TdU4x8M2z1cd57ODEy/douglas-adams-440nw-150948b.jpg);
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.epicquotes.com%2Fwp-content%2Fuploads%2F2022%2F03%2FDouglas-Adams-Quotes--1200x675.png&f=1&nofb=1&ipt=9ed2219a78af6d8d3d890675acfc30f96e2bff87684fc04cd37ea3bea332f19a&ipo=images);
     
     background-size: cover;
     background-attachment: fixed;
@@ -212,7 +217,7 @@ section {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 1000px;
+    height: 45vw;
     border-radius: 20px;
     margin-top: 10px;
     margin-bottom: -20px;
@@ -222,9 +227,10 @@ footer {
     background-color: black;
     color: white;
 
-    padding: 80px;
+    padding: 20px;
+    padding-left: 100px;
 
-    font-size: 40px;
+    font-size: 20px;
 
     border-radius: 40px;
 }
@@ -246,19 +252,51 @@ footer {
 
 .book {
     width: 100%;
-    box-shadow: rgba(255, 166, 0, 0.456) 0px 0px 200px 0px;
-    background-color: orange;
+    /* box-shadow: white 0px 0px 20px 0px; */
+    background: linear-gradient(darkblue 0%, rgba(255, 255, 255, 0) 80%);
     /* padding: 20px; */
     margin: 20px;
     border-radius: 40px;
+    /* border: 1px solid white; */
+    transition: border .4s, box-shadow .4s, margin .5s;
+}
+
+.book:hover {
+    width: 100%;
+    /* box-shadow: white 0px 0px 20px 0px; */
+    background: linear-gradient(darkred 0%, rgba(255, 255, 255, 0) 80%);
+    box-shadow: red 0px 0px 200px 0px;
+    /* padding: 20px; */
+    margin: 20px;
+    border-radius: 40px;
+    border: 1px solid white;
+    margin-top: 0px;
+    transition: border .4s, box-shadow .4s, margin .5s;
 }
 
 .book img {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    border-radius: 40px;
+    border-radius: 0px 0px 40px 40px;
     margin-bottom: -5px;
+    transition: border-radius .5s, transform 0.2s, border-radius .2s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: white 0px 0px 50px 0px;
+    /* transition: transform 0.6s; */
+    transition: box-shadow 0.4s, transform 0.2s;
+}
+
+.book:hover img {
+    transform: scale(1.05);
+    transform: rotate(5deg);
+    box-shadow: white 0px 0px 50px 0px;
+    border-radius: 40px 40px 40px 40px;
+    /* transition: transform 0.6s; */
+    transition: box-shadow 0.4s, transform 0.2s, border-radius .2s;
 }
 
 .book h3{
@@ -269,12 +307,15 @@ footer {
 
 .book h3 a {
     text-decoration: none;
-    color: black;
+    color: white;
+    transition: letter-spacing .3s, color .3s;
 }
 
-.book h3 a:hover {
+.book:hover h3 a {
     text-decoration: none;
-    color: white;
+    color: wheat;
+    letter-spacing: 3px;
+    transition: letter-spacing .3s, color .3s;
 }
 
 html {
@@ -291,23 +332,28 @@ img {
     transition: box-shadow 0.4s, transform 0.2s;
 }
 
-img:hover {
-    transform: scale(1.05);
-    box-shadow: white 0px 0px 50px 0px;
-    /* transition: transform 0.6s; */
-    transition: box-shadow 0.4s, transform 0.2s;
+.img-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 40px;
+    grid-template-rows: auto;
 }
 
-.img-container {
-    display: flex;
-    justify-content: space-around;
+.img-container img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+iframe {
+    width: 90%;
 }
 
 form {
     display: grid;
 
     padding: 60px;
-    font-size: 30px;
+    font-size: 20px;
 
     /* grid-template-columns: 50% 50%; */
     grid-gap: 40px;
@@ -408,8 +454,8 @@ body {
 
 .vert-menu {
     position: sticky;
-    top: 200px;
-    height: 700px;
+    top: 15%;
+    height: 23%;
 }
 
 .vert-menu ul {
@@ -427,28 +473,35 @@ body {
 
 footer {
     grid-area: footer;
+    z-index: 21;
+}
+
+.banner-text {
+    /* position: fixed; */
+    font-size: 80px;
+    color: white;
+    text-shadow: black 0px 0px 40px;
+    width: 500px;
+    margin-top: 15vw;
+    margin-left: 35vw;
+    margin-right: auto;
 }
 
 .contact {
     /* https://static.vecteezy.com/system/resources/previews/002/787/948/non_2x/cute-corgi-dog-sitting-cartoon-seamless-pattern-illustration-vector.jpg */
-    background-attachment: fixed;
-
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     /* font-family: "Philosopher", sans-serif; */
-
-    background: url(https://images.wallpapersden.com/image/download/anime-sunset-hd-ai-2023-art_bmVsZm2UmZqaraWkpJRmbmpnrWZmZ2U.jpg);
-
+    background: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2F3%2F0%2Fb%2F1113364-beautiful-cool-space-background-wallpapers-1920x1080-for-computer.jpg&f=1&nofb=1&ipt=c0585f80a8f45499b46406b7649df8573cee83be754f7e903ce8e736c37b4b2b&ipo=images);
     background-size: cover;
+    background-attachment: fixed;
+    /* background-size: cover; */
     display: block;
-
     font-size: 22px;
-
     color: var(--text-color);
 }
 
 .contact main {
     padding: 40px;
-
-    width: 1600px;
+    width: 80vw;
     margin: auto;
 }
