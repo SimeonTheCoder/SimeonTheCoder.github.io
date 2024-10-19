@@ -235,17 +235,6 @@ footer {
     border-radius: 40px;
 }
 
-@media (max-width: 1700px) {
-    main {
-        width: 90%;
-        margin: 0px;
-    }
-    
-    #menu ul {
-        flex-direction: column;
-    }
-}
-
 .book-container {
     display: flex;
 }
@@ -504,4 +493,124 @@ footer {
     padding: 40px;
     width: 80vw;
     margin: auto;
+}
+
+.form-div {
+    width: 20%;
+    margin: auto;
+}
+
+@media (max-width: 1000px) {
+    .menu ul, .vert-menu ul {
+        flex-direction: column;
+    }
+
+    header, .vert-menu {
+        position: absolute;
+    }
+
+    .vert-menu {
+        display: none;
+    }
+
+    .banner-text {
+        display: none;
+    }
+
+    section {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #main-body {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    article {
+        width: 100%;
+        padding: 0px;
+        margin: unset;
+    }
+
+    #main-body main {
+        padding: 0px;
+        width: 100%;
+    }
+
+    .book-container {
+        flex-direction: column;
+    }
+
+    .book {
+        padding: unset;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .book img {
+        height: 200px;
+    }
+
+    .banner-img {
+        margin-top: 200px;
+        height: 300px;
+    }
+
+    .menu-header {
+        width: 98%;
+    }
+
+    .img-container {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    iframe {
+        height: 200px;
+    }
+
+    blockquote {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    form {
+        display: block;
+    }
+
+    body {
+        margin-left: unset;
+        width: 100%;
+        overflow-x: hidden;
+        display: block;
+    }
+
+    form input, form select {
+        width: 70%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+        margin: unset;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    section form {
+        width: 100%;
+        padding: unset;
+    }
+
+    form div {
+        margin: unset;
+    }
+    
+    form div .pushable {
+        width: 100%;
+    }
+
+    .front {
+        padding: unset;
+    }
 }
